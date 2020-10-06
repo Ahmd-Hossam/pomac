@@ -1,0 +1,25 @@
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="info" *ngIf='!isuser'>
+                    <h2> to go to the tasks you should !!</h2>
+                    <h1> <a routerLink='login'> Log in </a> </h1>
+                    <h5> Or </h5>
+                    <h1> <a routerLink='signup'> Sign up </a></h1>
+                </div>
+
+                <div class="info" *ngIf='isuser'>
+                    <h1> pomac </h1>
+                    <h5> The power of marketing and coding  </h5>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="cont_img">
+                    <img src="assets/imgs/home/slider_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

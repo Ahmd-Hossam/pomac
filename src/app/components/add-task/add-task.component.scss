@@ -1,0 +1,56 @@
+.container{
+    padding:0;
+ 
+.close{
+    border-bottom:1px solid #999;
+    width: 100%;
+    position: relative;
+    top:-25px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    span{
+        font-weight: normal;
+    }
+    i{
+        float: right;
+    }
+}
+.mat-dialog-container{
+    padding:0 !important;
+}
+form{
+    border-radius: 34px;
+    padding:0;
+    width:400px;
+    background: #fff;
+    .main{
+        margin-top: 20px;
+        input,textarea{
+            width:100%;
+            padding:5px;
+        }
+        h4{
+            margin-bottom: 4px;
+            font-weight: normal;
+        }
+    }
+    .buttons{
+        margin-top:20px;
+        display: flex;
+        button{
+            margin-left:10px;
+        }
+        .colse_btn{
+            padding:5px  15px;
+            border-radius: 4px;
+            background:#BDC3CF;
+            border:1px solid #BDC3CF;
+            outline:none;
+            color:#fff;
+        }
+    }
+}
+}
+.danger{
+    color:#f00
+}

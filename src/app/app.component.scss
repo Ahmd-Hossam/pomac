@@ -1,0 +1,15 @@
+.mat-dialog-container{
+    padding:0 !important;
+}
+.nav{
+    padding-left:10%; 
+    position:fixed; z-index: 999;
+}
+
+.main{
+    padding-left:10%;
+     padding-top: 70px;
+     @media(max-width: 767px){
+         padding-left:15%;
+     }
+}

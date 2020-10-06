@@ -1,0 +1,51 @@
+body{
+    width:10%;
+    background:#FFF;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    @media(max-width:767px){
+        width:15%;
+    }
+    .logo{
+        background:#637ADE;
+        color:#fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Do Hyeon', sans-serif;
+        padding: 12px 0;
+        font-weight: 500;
+        letter-spacing: 2.1px;
+        width:100%;
+    }
+    aside{
+        border-right: 3px solid #99999942;
+        height: 100%;
+        .links{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .link_num_one{
+                @media(max-width: 767px){
+                    width: 105.5% !important;  
+                }
+            }
+            .link{
+                flex-grow: inherit;
+                color:#B4B7BE;
+                padding:12px 0;
+                font-size:25px;  
+            }
+            .active{
+                background:#ECEFF8;
+                color:#637ADE;
+                position: relative;
+                width: 102.5%;
+                border-right: 3px solid #637ADE;
+            }
+        }
+    }
+
+    
+}

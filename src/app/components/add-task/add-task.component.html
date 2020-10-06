@@ -1,0 +1,29 @@
+
+    <body>
+        <div class="container">
+            <div class="close" (click)="close()" title="close"> <span> new task </span> <i class="fas fa-times"></i> </div>
+            <form #f='ngForm' (ngSubmit)='submit(f)'>
+                <div class='main'>
+                    <h4> Title </h4>
+                    <input type="text" name='title' ngModel #title='ngModel' placeholder="Name" required>
+                    <div *ngIf='title.touched && title.errors?.required' class='danger'> This is a required field  </div>
+                </div>
+
+                <div class='main'>
+                    <h4> photo </h4>
+                    <input type="file" name='photo' ngModel #photo required>
+                </div>
+
+                <div class='main'>
+                    <h4> description </h4>
+                    <textarea name="desc"  ngModel #desc='ngModel' placeholder="Enter description" required></textarea>
+                    <div *ngIf='desc.touched && desc.errors?.required' class='danger'> This is a required field  </div>
+               </div>
+              
+                <div class="buttons" dir="rtl">
+                    <button class='btn btn-primary'> Add </button> 
+                    <button class="mat-raised-button colse_btn" (click)="close()">Close</button>
+                </div>
+            </form>
+        </div>
+    </body>

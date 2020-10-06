@@ -1,0 +1,41 @@
+body{
+    background:#EBEEF7;
+    padding:25px 0px;
+    position: relative;
+    height: 100%;
+    .add{
+        position: absolute;
+        right: 20px;
+        top:20px;
+        padding:5px 15px;
+        background:#637ADE;
+        outline:none;
+        border:2px solid #637ADE;
+    }
+    .title{
+        text-transform: capitalize;
+        color:#666;
+        padding:0 0 20px 20px;
+    }
+    .card{
+        margin-bottom: 20px;
+        .title_card{
+            margin:15px;
+            font-weight: bold;
+            text-transform: capitalize;
+            position: absolute;
+            color:#f1f1f1;
+        }
+        .date{font-weight: bold;}
+        img{
+            height: 200px;
+            width:100%;
+        }
+        .btn{
+            color:red;
+            outline:none;
+            border:none;
+            background:#fff;
+        }
+    }
+}

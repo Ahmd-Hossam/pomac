@@ -1,0 +1,11 @@
+<form #f='ngForm'>
+    <i class="fas fa-search"></i>
+    <input type="search" placeholder="Search"> 
+    <div class="nav">
+     <li *ngIf='!isuser'>
+        <a routerLink='login' class="login" > log in </a>
+     </li>
+        <a routerLink='signup' class="login" *ngIf='!isuser'> sign up  </a>
+        <a routerLink='signup' class="btn-danger" *ngIf='isuser' (click)='out()'> Log Out  </a>
+    </div>
+</form>

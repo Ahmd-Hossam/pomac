@@ -1,0 +1,11 @@
+<body>
+    <div class="logo"> pomac </div>
+    <aside>
+        <div class="links">
+            <a routerLink='' routerLinkActive="active" class="link link_num_one" [routerLinkActiveOptions]="{exact:true}" class="link link_one"> <i class="fas fa-home"></i>      </a>
+            <a routerLink='comp1' routerLinkActive="active" class="link link_one" *ngIf='isuser'> <i class="fas fa-tasks"></i>      </a>
+            <a routerLink='comp2' routerLinkActive="active" class="link link_one"> <i class="fas fa-cube"></i>      </a>
+            <a routerLink='comp3' routerLinkActive="active" class="link link_one"> <i class="fas fa-calendar"></i>  </a>
+        </div>
+    </aside>
+</body>

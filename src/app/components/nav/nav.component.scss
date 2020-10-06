@@ -1,0 +1,33 @@
+form{
+    background:#fff;
+    padding: 0 25px;
+    position: fixed;
+    width: 90%;
+    @media(max-width:767px){
+        left: 64px;
+        padding:0;
+    }
+    i{
+        color:#999;
+    }
+    input{
+        width: 50%;
+        padding: 23.5px 11px;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+    .nav{
+        position: absolute;
+        right:40px;
+        top:28px;
+        a{
+            margin:0 20px;
+        }
+        .btn-danger{
+            padding:5px 8px;
+            text-decoration:none;
+            border-radius:4px
+        }
+    }
+}
